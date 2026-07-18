@@ -20,7 +20,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint src/",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "e2e": "cypress run",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "browserslist": {
     "production": [
@@ -35,7 +38,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.0",
+    "@storybook/builder-webpack5": "^10.5.2",
+    "@storybook/preset-create-react-app": "^10.5.2",
+    "@storybook/react-webpack5": "^10.5.2",
+    "babel-loader": "^9.2.1",
+    "cypress": "^15.18.1",
     "eslint": "^8.57.1",
-    "eslint-config-dicodingacademy": "^0.9.5"
+    "eslint-config-dicodingacademy": "^0.9.5",
+    "react-refresh": "^0.14.0",
+    "storybook": "^10.5.2"
   }
 }
